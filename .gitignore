@@ -1,0 +1,11 @@
+# Ignore Visual Studio and build files
+server-site/.vs/
+server-site/obj/
+server-site/bin/
+server-site/Data/
+*.vsidx
+*.suo
+*.pdb
+*.dll
+*.exe
+*.cache
