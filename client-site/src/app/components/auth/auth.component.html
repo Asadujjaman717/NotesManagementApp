@@ -1,0 +1,60 @@
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="card p-4 shadow-lg rounded custom-card">
+    <div class="card-body">
+      <h2 class="text-center mb-4 text-accent">Welcome Back</h2>
+
+      <div class="mb-3">
+        <label class="form-label text-light">Email:</label>
+        <input type="email" [(ngModel)]="email" placeholder="Enter your email" class="form-control custom-input" required />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label text-light">Password:</label>
+        <input type="password" [(ngModel)]="password" placeholder="Enter your password" class="form-control custom-input" required />
+      </div>
+
+      <button class="btn btn-primary w-100 custom-btn" (click)="login()">Login</button>
+
+      <div class="text-center mt-3">
+        <button class="btn btn-link text-light" (click)="toggleForm()">Don't have an account? Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .custom-card {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .custom-input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .custom-btn {
+    background-color: #ff4757;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .custom-btn:hover {
+    background-color: #e84118;
+  }
+
+  .text-accent {
+    color: #ffcc00;
+    font-family: 'Poppins', sans-serif;
+  }
+</style>

@@ -1,0 +1,68 @@
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="card p-4 shadow-lg rounded custom-card">
+    <div class="card-body">
+      <h2 class="text-center mb-4 text-accent">Create an Account</h2>
+
+      <div class="mb-3">
+        <label class="form-label text-light">Full Name:</label>
+        <input type="text" #nameInput (input)="user.name = nameInput.value" class="form-control custom-input" required />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label text-light">Email:</label>
+        <input type="email" #emailInput (input)="user.email = emailInput.value" class="form-control custom-input" required />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label text-light">Date of Birth:</label>
+        <input type="date" #dobInput (input)="user.dob = dobInput.value" class="form-control custom-input" required />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label text-light">Password:</label>
+        <input type="password" #passInput (input)="user.pass = passInput.value" class="form-control custom-input" required />
+      </div>
+
+      <button class="btn btn-primary w-100 custom-btn" (click)="signup()">Sign Up</button>
+      
+      <div class="text-center mt-3">
+        <button class="btn btn-link text-light" (click)="toggleForm()">Already have an account? Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .custom-card {
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  .custom-input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  .custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .custom-btn {
+    background-color: #ff4757;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  .custom-btn:hover {
+    background-color: #e84118;
+  }
+  .text-accent {
+    color: #ffcc00;
+    font-family: 'Poppins', sans-serif;
+  }
+</style>
+
+

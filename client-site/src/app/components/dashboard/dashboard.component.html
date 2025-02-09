@@ -1,0 +1,77 @@
+<div class="container note-dashboard">
+  <div class="row pb-4">
+    <div class="col-md-8 text-center">
+      <h2 class="text-center">Note Dashboard</h2>
+    </div>
+    <div class="col-md-2 text-end">
+      <button class="btn btn-primary" (click)="router.navigate(['/create-note'])">Create Note</button>
+    </div>
+    <div class="col-md-2 text-center">
+      <button class="btn btn-danger" (click)="logout()">Logout</button>
+    </div>
+  </div>
+
+  <div *ngIf="isLoggedIn; else notLoggedIn">
+    <div class="row">
+      <!-- Regular Notes -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h3 class="card-title">Regular Notes</h3>
+            <div *ngFor="let note of regularNotes" class="note-card border p-2 rounded mb-2">
+              <p>{{ note.content }}</p>
+              <button class="btn btn-primary btn-sm me-2" (click)="editNote(note)">Edit</button>
+              <button class="btn btn-danger btn-sm" (click)="deleteNote(note.noteId)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Reminders -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h3 class="card-title">Reminders</h3>
+            <div *ngFor="let note of reminderNotes" class="note-card border p-2 rounded mb-2">
+              <p>{{ note.content }}</p>
+              <button class="btn btn-primary btn-sm me-2" (click)="editNote(note)">Edit</button>
+              <button class="btn btn-danger btn-sm" (click)="deleteNote(note.noteId)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- To-Do -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h3 class="card-title">To-Do</h3>
+            <div *ngFor="let note of todoNotes" class="note-card border p-2 rounded mb-2">
+              <p>{{ note.content }}</p>
+              <button class="btn btn-primary btn-sm me-2" (click)="editNote(note)">Edit</button>
+              <button class="btn btn-danger btn-sm" (click)="deleteNote(note.noteId)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bookmarks -->
+      <div class="col-md-6 mb-4">
+        <div class="card shadow">
+          <div class="card-body">
+            <h3 class="card-title">Bookmarks</h3>
+            <div *ngFor="let note of bookmarkNotes" class="note-card border p-2 rounded mb-2">
+              <p>{{ note.content }}</p>
+              <button class="btn btn-primary btn-sm me-2" (click)="editNote(note)">Edit</button>
+              <button class="btn btn-danger btn-sm" (click)="deleteNote(note.noteId)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #notLoggedIn>
+    <p class="text-center text-danger">Please log in to view and create notes.</p>
+  </ng-template>
+</div>

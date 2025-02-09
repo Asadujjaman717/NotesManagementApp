@@ -1,0 +1,49 @@
+<div class="container mt-4">
+    <h2>Create a New Note</h2>
+  
+    <form (ngSubmit)="createNote()">
+        <div class="mb-3">
+        <label class="form-label">Note Id</label>
+        <input type="text" [(ngModel)]="note.noteId" name="noteId" class="form-control" required>
+        </div>
+      <div class="mb-3">
+        <label class="form-label">Note Type</label>
+        <select [(ngModel)]="note.type" name="type" class="form-select" required>
+          <option value="regular">Regular Note</option>
+          <option value="reminder">Reminder</option>
+          <option value="todo">To-Do</option>
+          <option value="bookmark">Bookmark</option>
+        </select>
+      </div>
+  
+      <div class="mb-3">
+        <label class="form-label">Content</label>
+        <textarea [(ngModel)]="note.content" name="content" class="form-control" required></textarea>
+      </div>
+  
+      <div class="mb-3" *ngIf="note.type === 'reminder' || note.type === 'todo'">
+        <label class="form-label">Reminder Date</label>
+        <input type="datetime-local" [(ngModel)]="note.reminderDate" name="reminderDate" class="form-control">
+      </div>
+  
+      <div class="mb-3" *ngIf="note.type === 'todo'">
+        <label class="form-label">Due Date</label>
+        <input type="datetime-local" [(ngModel)]="note.dueDate" name="dueDate" class="form-control">
+      </div>
+  
+      <div class="mb-3" *ngIf="note.type === 'todo'">
+        <label class="form-check-label">
+          <input type="checkbox" [(ngModel)]="note.isCompleted" name="isCompleted" class="form-check-input"> Mark as Completed
+        </label>
+      </div>
+  
+      <div class="mb-3" *ngIf="note.type === 'bookmark'">
+        <label class="form-label">Bookmark URL</label>
+        <input type="url" [(ngModel)]="note.bookmarkUrl" name="bookmarkUrl" class="form-control">
+      </div>
+  
+      <button type="submit" class="btn btn-primary">Create Note</button>
+      <button type="button" class="btn btn-secondary ms-2" (click)="router.navigate(['/dashboard'])">Cancel</button>
+    </form>
+  </div>
+  
