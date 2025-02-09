@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Dotnet\\Notes-management-system\\server-site\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4BE007E8-63F7-43A3-9E0A-761DC887F3BF}|NotesApi.csproj|d:\\dotnet\\notes-management-system\\server-site\\repositories\\mydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BE007E8-63F7-43A3-9E0A-761DC887F3BF}|NotesApi.csproj|solutionrelative:repositories\\mydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BE007E8-63F7-43A3-9E0A-761DC887F3BF}|NotesApi.csproj|d:\\dotnet\\notes-management-system\\server-site\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BE007E8-63F7-43A3-9E0A-761DC887F3BF}|NotesApi.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BE007E8-63F7-43A3-9E0A-761DC887F3BF}|NotesApi.csproj|d:\\dotnet\\notes-management-system\\server-site\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +15,8 @@
       "RelativeMoniker": "D:0:0:{4BE007E8-63F7-43A3-9E0A-761DC887F3BF}|NotesApi.csproj|solutionrelative:models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4BE007E8-63F7-43A3-9E0A-761DC887F3BF}|NotesApi.csproj|d:\\dotnet\\notes-management-system\\server-site\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4BE007E8-63F7-43A3-9E0A-761DC887F3BF}|NotesApi.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4BE007E8-63F7-43A3-9E0A-761DC887F3BF}|NotesApi.csproj|d:\\dotnet\\notes-management-system\\server-site\\data\\mydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4BE007E8-63F7-43A3-9E0A-761DC887F3BF}|NotesApi.csproj|solutionrelative:data\\mydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4BE007E8-63F7-43A3-9E0A-761DC887F3BF}|NotesApi.csproj|d:\\dotnet\\notes-management-system\\server-site\\controllers\\notescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -46,8 +46,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:45:00.448Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-09T07:45:00.448Z"
             },
             {
               "$type": "Document",
@@ -59,12 +58,11 @@
               "RelativeToolTip": "Controllers\\NotesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T07:45:00.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-09T07:45:00.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Dotnet\\Notes-management-system\\server-site\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -77,12 +75,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MyDB.cs",
-              "DocumentMoniker": "D:\\Dotnet\\Notes-management-system\\server-site\\Repositories\\MyDB.cs",
-              "RelativeDocumentMoniker": "Repositories\\MyDB.cs",
-              "ToolTip": "D:\\Dotnet\\Notes-management-system\\server-site\\Repositories\\MyDB.cs",
-              "RelativeToolTip": "Repositories\\MyDB.cs",
+              "DocumentMoniker": "D:\\Dotnet\\Notes-management-system\\server-site\\Data\\MyDB.cs",
+              "RelativeDocumentMoniker": "Data\\MyDB.cs",
+              "ToolTip": "D:\\Dotnet\\Notes-management-system\\server-site\\Data\\MyDB.cs",
+              "RelativeToolTip": "Data\\MyDB.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-09T07:45:00.564Z",
@@ -109,7 +107,7 @@
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "D:\\Dotnet\\Notes-management-system\\server-site\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-09T07:45:00.57Z",
               "EditorCaption": ""

@@ -101,3 +101,5 @@ D:\Dotnet\Notes-management-system\server-site\obj\Debug\net6.0\refint\NotesApi.d
 D:\Dotnet\Notes-management-system\server-site\obj\Debug\net6.0\NotesApi.pdb
 D:\Dotnet\Notes-management-system\server-site\obj\Debug\net6.0\NotesApi.genruntimeconfig.cache
 D:\Dotnet\Notes-management-system\server-site\obj\Debug\net6.0\ref\NotesApi.dll
+D:\Dotnet\Notes-management-system\server-site\obj\Debug\net6.0\NotesApi.sourcelink.json
+D:\Dotnet\Notes-management-system\server-site\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt

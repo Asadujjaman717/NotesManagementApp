@@ -1,13 +1,15 @@
 <div class="container note-dashboard">
-  <div class="row pb-4">
-    <div class="col-md-8 text-center">
-      <h2 class="text-center">Note Dashboard</h2>
+  <div class="pb-4">
+    <div class="col-md-12 text-center">
+      <h2 class="text-center text-dashboard">Note Dashboard</h2>
     </div>
-    <div class="col-md-2 text-end">
-      <button class="btn btn-primary" (click)="router.navigate(['/create-note'])">Create Note</button>
-    </div>
-    <div class="col-md-2 text-center">
-      <button class="btn btn-danger" (click)="logout()">Logout</button>
+    <div class="d-flex justify-content-between mt-3">
+      <div class=" text-center">
+        <button class="btn btn-primary" (click)="router.navigate(['/create-note'])">Create Note</button>
+      </div>
+      <div class="text-center">
+        <button class="btn btn-danger" (click)="logout()">Logout</button>
+      </div>
     </div>
   </div>
 
@@ -69,6 +71,7 @@
         </div>
       </div>
     </div>
+    
   </div>
 
   <ng-template #notLoggedIn>
